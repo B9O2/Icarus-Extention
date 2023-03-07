@@ -1,2 +1,2 @@
-from base import *
-echo("I'm .ica")
+import base
+base.echo("I'm .ica")
