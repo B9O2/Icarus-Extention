@@ -9,8 +9,17 @@
   "categories": [
     "Programming Languages"
   ],
+  "main":"src/icarus.js",
+  "type": "module",
   "contributes": {
-    "languages": [{
+    "commands": [
+      {
+        "command": "icarus.version",
+        "title": "Icarus Version"
+      }
+    ],
+    "languages": [
+    {
       "id": "icarus",
       "aliases": ["Icarus", "icarus"],
       "extensions": [".py",".ica"],
@@ -20,6 +29,12 @@
       "language": "icarus",
       "scopeName": "source.icarus",
       "path": "./syntaxes/MagicPython.tmLanguage.json"
-    }]
+    },
+    {
+      "scopeName": "source.regexp.icarus",
+      "path": "./syntaxes/MagicRegExp.tmLanguage.json"
+    }
+    
+  ]
   }
 }
