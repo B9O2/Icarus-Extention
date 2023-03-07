@@ -1,0 +1,2 @@
+from base import *
+echo("I'm .ica")
